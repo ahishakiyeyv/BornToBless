@@ -111,6 +111,62 @@ import Menu from "./Component/Menu.vue";
       </div>
     </div>
   </section>
+  <section class="section4">
+    <div class="subtitle">
+      <span>join our cause</span>
+    </div>
+    <h1 class="title-section2">Get Involved</h1>
+    <p class="text-section2">
+      There are multiple ways you can contribute to our mission. Every form of support, whether
+      time, resources, or advocacy, makes a meaningful difference.
+    </p>
+    <div class="container">
+      <div class="container1">
+        <div class="icons">
+          <i class="fa fa-solid fa-hand-holding-heart"></i>
+        </div>
+        <h2>Become a Volunteer</h2>
+        <p>
+          Join our team of dedicated volunteers who are making a direct impact in communities across
+          Burundi. Whether you can offer your time, skills, or resources, there are many ways to get
+          involved and help us bring healthcare and education to those in need.
+        </p>
+        <button class="btn-learn">Learn More →</button>
+      </div>
+      <div class="container1">
+        <div class="icons">
+          <i class="fa fa-solid fa-hand-holding-heart"></i>
+        </div>
+        <h2>Become a Volunteer</h2>
+        <p>
+          Join our team of dedicated volunteers who are making a direct impact in communities across
+          Burundi. Whether you can offer your time, skills, or resources, there are many ways to get
+          involved and help us bring healthcare and education to those in need.
+        </p>
+        <button class="btn-learn">Learn More →</button>
+      </div>
+      <div class="container1">
+        <div class="icons">
+          <i class="fa fa-solid fa-hand-holding-heart"></i>
+        </div>
+        <h2>Become a Volunteer</h2>
+        <p>
+          Join our team of dedicated volunteers who are making a direct impact in communities across
+          Burundi. Whether you can offer your time, skills, or resources, there are many ways to get
+          involved and help us bring healthcare and education to those in need.
+        </p>
+        <button class="btn-learn">Learn More →</button>
+      </div>
+    </div>
+    <div class="call-to-action">
+      <h2>Ready to Make a Difference?</h2>
+      <p>
+        Join Born To Bless today and become part of a community dedicated to transforming lives
+        through companssionate service.
+      </p>
+      <button class="btn-call">Contact Us Today →</button>
+    </div>
+  </section>
 </template>
 
 <style scoped>
@@ -350,5 +406,91 @@ p {
 .btn-learn:hover {
   background-color: var(--secondary-color);
   color: var(--color-white);
+}
+
+/* ====================Section 4======================= */
+.section4 {
+  padding: 8rem 2rem;
+  background-color: var(--color-white);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.container1 {
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--bg-color);
+  max-width: 600px;
+}
+.container1 h2 {
+  color: var(--color-accent);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.container1 p {
+  color: #64748b; /* Muted slate text */
+  line-height: 1.6;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+.container1 .btn-learn {
+  border: 1px solid #e2e8f0;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.icons {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d8dce0;
+}
+
+.call-to-action {
+  text-align: center;
+  margin: 6rem auto;
+  max-width: 1000px;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border: 1px solid #b3c9d8;
+  background-color: #f1f5f8;
+}
+.call-to-action h2 {
+  color: #64748b;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.call-to-action p {
+  color: #64748b;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.btn-call {
+  background-color: var(--primary-color);
+  color: var(--color-white);
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 </style>
