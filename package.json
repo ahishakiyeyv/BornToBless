@@ -12,6 +12,7 @@
     "lint:eslint": "eslint . --fix --cache"
   },
   "dependencies": {
+    "@fortawesome/vue-fontawesome": "^3.1.3",
     "vue": "beta"
   },
   "devDependencies": {
