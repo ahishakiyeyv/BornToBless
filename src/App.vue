@@ -167,6 +167,77 @@ import Menu from "./Component/Menu.vue";
       <button class="btn-call">Contact Us Today →</button>
     </div>
   </section>
+  <section class="section5">
+    <div class="subtitle">
+      <span>Contact information</span>
+    </div>
+    <h1 class="title-section2">Get in Touch</h1>
+    <p class="text-section2">
+      Have questions about our work or interested in getting involved? We welcome your inquiries and
+      look forward to hearing from you.
+    </p>
+    <div class="contact-container">
+      <!-- LEFT SIDE -->
+      <div class="contact-form-card">
+        <h2>Send Us a Message</h2>
+
+        <form>
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" placeholder="John Doe" required />
+          </div>
+
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" placeholder="john@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label>Your Message *</label>
+            <textarea rows="5" placeholder="Tell us how we can help..." required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit Message</button>
+        </form>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+
+        <div class="info-cards">
+          <div class="icon"><i class="fa fa-regular fa-envelope"></i></div>
+          <div>
+            <span class="info-label">EMAIL ADDRESS</span>
+            <p>info@borntobless.org</p>
+          </div>
+        </div>
+
+        <div class="info-cards">
+          <div class="icon"><i class="fa fa-solid fa-phone"></i></div>
+          <div>
+            <span class="info-label">PHONE NUMBER</span>
+            <p>+257 XX XXX XXX</p>
+          </div>
+        </div>
+
+        <div class="info-cards">
+          <div class="icon"><i class="fa fa-solid fa-location-dot"></i></div>
+          <div>
+            <span class="info-label">OFFICE LOCATION</span>
+            <p>Bujumbura, Burundi</p>
+          </div>
+        </div>
+
+        <div class="office-hours">
+          <h4>Office Hours</h4>
+          <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+          <p>Saturday: 9:00 AM - 1:00 PM</p>
+          <p>Sunday: Closed</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <style scoped>
@@ -492,5 +563,139 @@ p {
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+/* ================== Section 4 ===================== */
+.section5 {
+  padding: 5rem 2rem;
+  background-color: var(--bg-color);
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+/* LEFT CARD */
+.contact-form-card {
+  flex: 1;
+  min-width: 320px;
+  height: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form-card h2 {
+  margin-bottom: 25px;
+  font-size: 22px;
+  color: #1f2d3d;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #dcdfe6;
+  font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--primary-color);
+  color: var(--color-white);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0f2e57;
+}
+
+/* RIGHT SIDE */
+.contact-info {
+  flex: 1;
+  min-width: 320px;
+  height: auto;
+  border: 1px solid red;
+}
+
+.contact-info h2 {
+  /* margin-bottom: 25px; */
+  font-size: 22px;
+  color: #1f2d3d;
+}
+
+.info-cards {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.icon {
+  width: 45px;
+  height: 45px;
+  background: #e6edf7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: #153e75;
+  font-size: 18px;
+}
+
+.info-label {
+  font-size: 12px;
+  color: #6b7280;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.office-hours {
+  background: #eef2f7;
+  padding: 20px;
+  border-radius: 10px;
+  /* margin-top: 10px; */
+}
+
+.office-hours h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.office-hours p {
+  font-size: 14px;
+  margin-bottom: 5px;
 }
 </style>
