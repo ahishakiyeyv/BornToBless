@@ -716,7 +716,7 @@ textarea:focus {
   }
 
   .section1 {
-    padding: 6rem 1.5rem;
+    padding: 16rem 1.5rem;
     background-position: top;
   }
 
