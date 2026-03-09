@@ -127,33 +127,27 @@ import Menu from "./Component/Menu.vue";
         </div>
         <h2>Become a Volunteer</h2>
         <p>
-          Join our team of dedicated volunteers who are making a direct impact in communities across
-          Burundi. Whether you can offer your time, skills, or resources, there are many ways to get
-          involved and help us bring healthcare and education to those in need.
+          Join our team of dedicated volunteers and make a direct tangible impact in communities across Burundi through hands-on service.
         </p>
         <button class="btn-learn">Learn More →</button>
       </div>
       <div class="container1">
         <div class="icons">
-          <i class="fa fa-solid fa-hand-holding-heart"></i>
+          <i class="fa fa-solid fa-handshake"></i>
         </div>
-        <h2>Become a Volunteer</h2>
+        <h2>Partner with Us</h2>
         <p>
-          Join our team of dedicated volunteers who are making a direct impact in communities across
-          Burundi. Whether you can offer your time, skills, or resources, there are many ways to get
-          involved and help us bring healthcare and education to those in need.
+          Collaborate with Born to Bless to expand our reach and deepen our impact through strategic partneships and shared resources.
         </p>
         <button class="btn-learn">Learn More →</button>
       </div>
       <div class="container1">
         <div class="icons">
-          <i class="fa fa-solid fa-hand-holding-heart"></i>
+          <i class="fa fa-solid fa-bullhorn"></i>
         </div>
-        <h2>Become a Volunteer</h2>
+        <h2>Raise Awareness</h2>
         <p>
-          Join our team of dedicated volunteers who are making a direct impact in communities across
-          Burundi. Whether you can offer your time, skills, or resources, there are many ways to get
-          involved and help us bring healthcare and education to those in need.
+          Help spread the word about our mission and critical needs we address in healthcare and education sectors.
         </p>
         <button class="btn-learn">Learn More →</button>
       </div>
@@ -184,7 +178,7 @@ import Menu from "./Component/Menu.vue";
         <form>
           <div class="form-group">
             <label>Full Name *</label>
-            <input type="text" placeholder="John Doe" required />
+            <input type="text" placeholder="John Butoyi" required />
           </div>
 
           <div class="form-group">
@@ -643,7 +637,7 @@ textarea:focus {
   flex: 1;
   min-width: 320px;
   height: auto;
-  border: 1px solid red;
+  border: 1px solid #e2e8f0;
 }
 
 .contact-info h2 {
@@ -697,5 +691,123 @@ textarea:focus {
 .office-hours p {
   font-size: 14px;
   margin-bottom: 5px;
+}
+
+:deep(body) {
+  padding-top: 72px;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  :deep(body) {
+    padding-top: 72px; /* allow for fixed header */
+  }
+
+  .section1 {
+    padding: 6rem 1.5rem;
+    background-position: top;
+  }
+
+  .title-headings {
+    font-size: 2.5rem;
+  }
+
+  .text-heading {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .btn-action {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-action .btn-act,
+  .btn-action .btn1 {
+    width: 100%;
+  }
+
+  .section2,
+  .section3,
+  .section4,
+  .section5 {
+    padding: 4rem 1.5rem;
+  }
+
+  .text-section2 {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .action {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .info-card {
+    flex-direction: column;
+    margin: 3rem auto;
+  }
+
+  .card-content {
+    padding: 2rem;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .call-to-action {
+    padding: 2rem;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  :deep(body) {
+    padding-top: 72px;
+  }
+
+  .section1 {
+    padding: 8rem 2rem;
+  }
+
+  .title-headings {
+    font-size: 3.5rem;
+  }
+
+  .text-heading {
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+
+  .text-section2 {
+    width: 90%;
+    font-size: 1.1rem;
+  }
+
+  .action {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .action-box {
+    flex: 1 1 280px;
+  }
+
+  .info-card {
+    flex-direction: column;
+    max-width: 720px;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 </style>
