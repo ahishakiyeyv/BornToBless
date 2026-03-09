@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="logo-container">
-      <h1>Logo</h1>
+      <h1><img src="/logo.png" alt="Logo"></h1>
     </div>
 
     <nav :class="{ open: mobileMenuOpen }">
@@ -59,6 +59,10 @@ header {
 .logo-container h1 {
   margin: 0;
   font-size: 24px;
+}
+.logo-container img {
+  height: 40px;
+  width: auto;
 }
 
 nav {

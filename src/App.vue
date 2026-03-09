@@ -39,12 +39,12 @@ import Menu from "./Component/Menu.vue";
         <p class="p-box">Lives Touched</p>
       </div>
       <div class="action-box">
-        <i class="fa fa-heart-o" aria-hidden="true"></i>
+        <i class="fa fa-solid fa-users"></i>
         <h2 class="h2-box">50+</h2>
         <p class="p-box">Active Volunteers</p>
       </div>
       <div class="action-box">
-        <i class="fa fa-heart-o" aria-hidden="true"></i>
+        <i class="fa fa-solid fa-globe"></i>
         <h2 class="h2-box">10+</h2>
         <p class="p-box">Communities Served</p>
       </div>
@@ -62,7 +62,7 @@ import Menu from "./Component/Menu.vue";
     <div class="box">
       <div class="info-card">
         <div class="card-image">
-          <img src="../public/img/children.png" alt="Healthcare Support" />
+          <img src="../public/img/healthcare.jpg" alt="Healthcare Support" />
         </div>
         <div class="card-content">
           <div class="icon-box">
@@ -86,7 +86,7 @@ import Menu from "./Component/Menu.vue";
       </div>
       <div class="info-card">
         <div class="card-image">
-          <img src="../public/img/children.png" alt="Healthcare Support" />
+          <img src="../public/img/educational.jpg" alt="Healthcare Support" />
         </div>
         <div class="card-content">
           <div class="icon-box">
@@ -178,7 +178,7 @@ import Menu from "./Component/Menu.vue";
         <form>
           <div class="form-group">
             <label>Full Name *</label>
-            <input type="text" placeholder="John Butoyi" required />
+            <input type="text" placeholder="John Butoyi " required />
           </div>
 
           <div class="form-group">
@@ -203,7 +203,7 @@ import Menu from "./Component/Menu.vue";
           <div class="icon"><i class="fa fa-regular fa-envelope"></i></div>
           <div>
             <span class="info-label">EMAIL ADDRESS</span>
-            <p>info@borntobless.org</p>
+            <p>borntoblessvolunteerclub30@gmail.com</p>
           </div>
         </div>
 
@@ -211,12 +211,12 @@ import Menu from "./Component/Menu.vue";
           <div class="icon"><i class="fa fa-solid fa-phone"></i></div>
           <div>
             <span class="info-label">PHONE NUMBER</span>
-            <p>+257 XX XXX XXX</p>
+            <p>+49 1516 4847281</p>
           </div>
         </div>
 
         <div class="info-cards">
-          <div class="icon"><i class="fa fa-solid fa-location-dot"></i></div>
+          <div class="icon"><i class="fa fa-solid fa-compass"></i></div>
           <div>
             <span class="info-label">OFFICE LOCATION</span>
             <p>Bujumbura, Burundi</p>
@@ -657,6 +657,18 @@ textarea:focus {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
+/* Ensure long text wraps inside the flex layout (mobile/tablet) */
+.info-cards > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.info-cards p {
+  margin: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 .icon {
   width: 45px;
   height: 45px;
@@ -741,7 +753,8 @@ textarea:focus {
 
   .action {
     flex-direction: column;
-    width: 100%;
+    width: 100% !important;
+    max-width: 100%;
     gap: 20px;
   }
 
@@ -793,6 +806,7 @@ textarea:focus {
 
   .action {
     flex-wrap: wrap;
+    max-width: 100%;
     gap: 20px;
   }
 
