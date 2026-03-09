@@ -6,10 +6,10 @@
 
     <nav :class="{ open: mobileMenuOpen }">
       <ul>
-        <li><a href="#" @click="mobileMenuOpen = false">Home</a></li>
-        <li><a href="#" @click="mobileMenuOpen = false">About</a></li>
-        <li><a href="#" @click="mobileMenuOpen = false">Get Involved</a></li>
-        <li><a href="#" @click="mobileMenuOpen = false">Contact</a></li>
+        <li><a href="#Home" @click="mobileMenuOpen = false">Home</a></li>
+        <li><a href="#About" @click="mobileMenuOpen = false">About</a></li>
+        <li><a href="#GetInvolved" @click="mobileMenuOpen = false">Get Involved</a></li>
+        <li><a href="#Contact" @click="mobileMenuOpen = false">Contact</a></li>
       </ul>
       <button class="btn">Donate</button>
     </nav>

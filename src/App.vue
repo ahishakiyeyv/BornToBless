@@ -4,7 +4,7 @@ import Menu from "./Component/Menu.vue";
 
 <template>
   <Menu />
-  <section class="section1">
+  <section class="section1" id="Home">
     <div class="tag">
       <h4 class="tag-title">Volunteer Organization</h4>
     </div>
@@ -18,7 +18,7 @@ import Menu from "./Component/Menu.vue";
       <button class="btn1">Our Mission</button>
     </div>
   </section>
-  <section class="section2">
+  <section class="section2" id="About">
     <div class="subtitle">
       <span>About our organization</span>
     </div>
@@ -50,7 +50,7 @@ import Menu from "./Component/Menu.vue";
       </div>
     </div>
   </section>
-  <section class="section3">
+  <section class="section3" id="Involved">
     <div class="subtitle">
       <span>our impact areas</span>
     </div>
@@ -111,7 +111,7 @@ import Menu from "./Component/Menu.vue";
       </div>
     </div>
   </section>
-  <section class="section4">
+  <section class="section4" id="GetInvolved">
     <div class="subtitle">
       <span>join our cause</span>
     </div>
@@ -161,7 +161,7 @@ import Menu from "./Component/Menu.vue";
       <button class="btn-call">Contact Us Today →</button>
     </div>
   </section>
-  <section class="section5">
+  <section class="section5" id="Contact">
     <div class="subtitle">
       <span>Contact information</span>
     </div>
